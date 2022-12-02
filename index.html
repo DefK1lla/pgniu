@@ -12,35 +12,37 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <img class="header__logo" src="img/logo.png" alt="logo">
-        <h1 class="header__title">
-          Карта буфетов и столовых ПГНИУ
-        </h1>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img class="header__logo" src="img/logo.png" alt="logo">
+          <h1 class="header__title">
+            Карта буфетов и столовых ПГНИУ
+          </h1>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <div class="container-lg">
-      <div class="map" id="map">
-        <div class="popup">
-          <button class="popup__close">&#x2715</button>
-          <div class="popup__content">
+    <main class="main">
+      <div class="container-lg">
+        <div class="map" id="map">
+          <div class="popup">
+            <button class="popup__close">&#x2715</button>
+            <div class="popup__content">
 
+            </div>
+          </div>
+          <div class="legend">
+            <ul class="legend__list">
+              <li class="legend__item legend__item_red">Есть буфет/столовая</li>
+              <li class="legend__item">Буфеты/столовые отсутствуют</li>
+            </ul>
           </div>
         </div>
-        <div class="legend">
-          <ul class="legend__list">
-            <li class="legend__item legend__item_red">Есть буфет/столовая</li>
-            <li class="legend__item">Буфеты/столовые отсутствуют</li>
-          </ul>
-        </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=c63ed892-7ef6-450d-bc1b-7d118b42db4e&lang=ru_RU">
   </script>
