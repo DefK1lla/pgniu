@@ -1,0 +1,354 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gillroy";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto"),
+    url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gillroy";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Roboto"),
+    url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Semibold.woff") format("woff");
+}
+
+body {
+  font-family: "Gillroy", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+
+  background: #fdf7f7;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  max-width: 130px;
+  max-height: 130px;
+
+  margin: 0 40px 20px;
+}
+
+.header__title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.map {
+  position: relative;
+
+  min-width: 100vh;
+  height: 650px;
+}
+
+.legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  padding: 10px 15px;
+
+  background: #fff;
+}
+
+.legend__item {
+  position: relative;
+
+  padding-left: 20px;
+}
+
+.legend__item::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 15px;
+  height: 15px;
+
+  background: #181818;
+  border-radius: 50%;
+}
+
+.legend__item_red::before {
+  background: #f20040;
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+.balloon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.balloon__header {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+
+  background: #ff1f49;
+  border-radius: 53px;
+}
+
+.balloon__list {
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balloon__item {
+  position: relative;
+
+  margin: 3px 0;
+  padding-left: 10px;
+}
+
+.balloon__item::before {
+  content: "-";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.balloon__item span {
+  padding: 1px 5px;
+
+  color: #fff;
+
+  border-radius: 50px;
+  background: #000;
+}
+
+.balloon__slider {
+  width: 100%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #f20040;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f20040;
+}
+
+.balloon__img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .legend {
+    position: static;
+    display: inline-block;
+  }
+}
+
+.popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 999;
+
+  max-width: 600px;
+  width: calc(100% - 30px);
+  padding: 5px 15px 15px;
+
+  display: none;
+
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: -7px 11px 46px -1px rgba(0, 0, 0, 0.78);
+}
+
+.popup.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__close {
+  align-self: flex-end;
+
+  font-size: 24px;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  color: #ff1f49;
+}

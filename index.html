@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карта буфетов и столовых ПГНИУ</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <img class="header__logo" src="img/logo.png" alt="logo">
+        <h1 class="header__title">
+          Карта буфетов и столовых ПГНИУ
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container-lg">
+      <div class="map" id="map">
+        <div class="popup">
+          <button class="popup__close">&#x2715</button>
+          <div class="popup__content">
+
+          </div>
+        </div>
+        <div class="legend">
+          <ul class="legend__list">
+            <li class="legend__item legend__item_red">Есть буфет/столовая</li>
+            <li class="legend__item">Буфеты/столовые отсутствуют</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c63ed892-7ef6-450d-bc1b-7d118b42db4e&lang=ru_RU">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
