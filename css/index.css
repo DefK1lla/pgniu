@@ -152,17 +152,14 @@ table {
 }
 
 body {
+  /* overflow-x: hidden; */
+
   font-family: "Gillroy", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.7;
 
   background: #fdf7f7;
-}
-
-.wrapper {
-  width: 100%;
-  overflow: hidden;
 }
 
 .container {
