@@ -12,7 +12,7 @@ const buildings = [
         'буфет (1 этаж, рядом с переходом в корпус 8) <span>9:00 - 17:30</span>',
         'буфет (2 этаж, переход между корпусами 1 и 2) <span>9:00 - 17:00</span>'
       ],
-      photos: ['./img/photo/1-1.jpg', './img/photo/1-1.2.jpg', './img/photo/1-1.3.jpg']
+      photos: ['./img/photo/1-1.jpg', './img/photo/1-1.2.jpg', './img/photo/1-1.3.jpg', './img/photo/1-2.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -25,11 +25,11 @@ const buildings = [
     balloonContent: {
       title: 'Корпус №2',
       items: [
-        'буфет «Универ-буфет» (1 этаж) <span>8:00 - 20:00</span>',
+        'кофейня "Monkey Grinder" (1 этаж) <span>8:00 - 20:00</span>',
         'буфет (2 этаж) <span>9:00 - 17:00</span>',
         'буфет (3 этаж) <span>11:00 - 16:00</span>',
       ],
-      photos: ['./img/photo/2-1.jpg', './img/photo/2-2.jpg', './img/photo/2-3.jpg']
+      photos: ['./img/photo/2-1.jpg', './img/photo/2-2.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -68,7 +68,8 @@ const buildings = [
         'столовая (1 этаж, левое крыло) <span>9:00 - 17:00</span>',
         'буфет (1 этаж, правое крыло) <span> 8:00 - 20:00</span>',
         'кофейня <span>10:00 - 18:00</span>',
-      ]
+      ],
+      photos: ['./img/photo/5.jpg', './img/photo/5.2.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -129,10 +130,8 @@ const buildings = [
       title: 'Корпус №9',
       items: [
         'буфет (2 этаж) <span>8:30 - 20:00</span>',
-        'столовая «На Заимке» <span>10:00 - 16:30</span>',
-        'столовая (2 этаж) <span>10:00 - 18:00</span>',
       ],
-      photos: ['./img/photo/8-2.jpg']
+      photos: ['./img/photo/9-2.jpg',]
     },
     mark: {
       iconLayout: 'default#image',
