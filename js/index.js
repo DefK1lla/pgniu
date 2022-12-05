@@ -99,7 +99,8 @@ const buildings = [
       title: 'Корпус №7',
       items: [
         'буфет “Киты-Еды” <span>9:00 - 18:00</span>',
-      ]
+      ],
+      photos: ['./img/photo/7.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -113,7 +114,6 @@ const buildings = [
       title: 'Корпус №8',
       items: [
         'столовая (1 этаж) <span>9:00 - 17:00</span>',
-        'буфет-бар (1 этаж) <span>10:00 - 18:00</span>',
         'буфет (2 этаж, переход из корпуса 8 в 6 и 7) <span>8:30 - 17:30</span>',
       ],
       photos: ['./img/photo/8-1.jpg', './img/photo/8-2.jpg']
