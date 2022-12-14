@@ -183,60 +183,6 @@ const buildings = [
 
 const marks = [
   {
-    coords: [58.00852184853696, 56.18396470101921],
-    mark: {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/placemarks/parking.png',
-      iconImageSize: [60, 25],
-      iconImageOffset: [-25, -14]
-    }
-  },
-  {
-    coords: [58.008595881065766, 56.18686148675529],
-    mark: {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/placemarks/dorm2.png',
-      iconImageSize: [60, 25],
-      iconImageOffset: [-25, -13]
-    }
-  },
-  {
-    coords: [58.00749543961996, 56.1897103559865],
-    mark: {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/placemarks/dorm8.png',
-      iconImageSize: [60, 25],
-      iconImageOffset: [-25, -10]
-    }
-  },
-  {
-    coords: [58.00751425477945, 56.18630120516961],
-    mark: {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/placemarks/fountain.png',
-      iconImageSize: [70, 25],
-      iconImageOffset: [-35, 0]
-    }
-  },
-  {
-    coords: [58.007878731428534, 56.18822166682428],
-    mark: {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/placemarks/eni.png',
-      iconImageSize: [50, 25],
-      iconImageOffset: [-25, -10]
-    }
-  },
-  {
-    coords: [58.00662582733898, 56.18594715357967],
-    mark: {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/placemarks/garden.png',
-      iconImageSize: [150, 25],
-      iconImageOffset: [-75, 12]
-    }
-  },
-  {
     coords: [58.00821931081124, 56.18327597264616],
     mark: {
       iconLayout: 'default#image',
