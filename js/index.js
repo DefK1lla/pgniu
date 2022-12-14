@@ -5,7 +5,8 @@ const bldng = {
   canteen,
   vendmac,
   bar,
-  coffee
+  coffee,
+  all
 };
 
 const buildings = [
@@ -460,5 +461,5 @@ document.querySelector('.select').addEventListener('change', (e) => {
 
   generateObjects(select.value);
 
-  legendType.forEach(elem => elem.textContent = select.options[select.selectedIndex].innerText.toLowerCase());
+  legendType.forEach(elem => elem.textContent = select.options[select.selectedIndex].dataset.text);
 });

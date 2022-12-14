@@ -28,11 +28,12 @@
       <div class="container-lg">
         <div class="form">
           <select class="select" name="type" id="type">
-            <option value="buffet">Буфеты</option>
-            <option value="canteen">Столовые</option>
-            <option value="coffee">Кофейни</option>
-            <option value="bar">Бары</option>
-            <option value="vendmac">Торговые автоматы</option>
+            <option value="all" selected data-text="пункты питания">Все</option>
+            <option value="buffet" data-text="буфеты">Буфеты</option>
+            <option value="canteen" data-text="столовые">Столовые</option>
+            <option value="coffee" data-text="кофейни">Кофейни</option>
+            <option value="bar" data-text="бары">Бары</option>
+            <option value="vendmac" data-text="торговые автоматы">Торговые автоматы</option>
           </select>
         </div>
         <div class="map" id="map">
@@ -44,8 +45,8 @@
           </div>
           <div class="legend">
             <ul class="legend__list">
-              <li class="legend__item legend__item_red">есть <span class="legend-type">буфеты</span></li>
-              <li class="legend__item"><span class="legend-type">буфеты</span> отсутствуют</li>
+              <li class="legend__item legend__item_red">есть <span class="legend-type">пункты питания</span></li>
+              <li class="legend__item"><span class="legend-type">пункты питания</span> отсутствуют</li>
             </ul>
           </div>
         </div>
@@ -61,6 +62,7 @@
   <script src="js/canteen.js"></script>
   <script src="js/vendmac.js"></script>
   <script src="js/coffee.js"></script>
+  <script src="js/all.js"></script>
   <script src="js/index.js"></script>
 </body>
 
