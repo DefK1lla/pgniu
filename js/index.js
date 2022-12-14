@@ -1,5 +1,13 @@
 const center = [58.00790199295418, 56.189077148519694];
 
+const bldng = {
+  buffet,
+  canteen,
+  vendmac,
+  bar,
+  coffee
+};
+
 const buildings = [
   {
     coords: [58.008414338540305, 56.187979282268365],
@@ -350,9 +358,8 @@ document.querySelector('.popup__close').addEventListener('click', function (e) {
   e.target.parentElement.classList.remove('active')
 });
 
-function setPopupContent(index) {
+function setPopupContent(bldng) {
   const popup = document.querySelector('.popup__content');
-  const bldng = buildings[index];
   popup.innerHTML = `
     <div class="balloon">
       <div class="balloon__header">${bldng.balloonContent.title}</div>
@@ -390,15 +397,9 @@ function setPopupContent(index) {
   popup.parentElement.classList.add('active');
 }
 
-function init() {
-  const map = new ymaps.Map('map', {
-    center: center,
-    zoom: 17
-  });
-
-  map.options.set('yandexMapDisablePoiInteractivity', true);
-
-  buildings.forEach((bldng, index) => {
+function generateObjects(type) {
+  const bldngs = bldng[type];
+  bldngs.forEach((bldng) => {
     const mark = new ymaps.GeoObjectCollection();
     mark.add(new ymaps.Placemark(
       bldng.coords, {},
@@ -407,9 +408,12 @@ function init() {
 
     map.geoObjects.add(mark);
 
-    mark.events.add('click', function (e) {
-      setPopupContent(index)
-    })
+    if (bldng.balloonContent) {
+      mark.events.add('click', function (e) {
+        setPopupContent(bldng);
+      });
+    }
+
   });
 
 
@@ -425,6 +429,19 @@ function init() {
       mapMarks.options.set('visible', true);
     }
   });
+}
+
+let map;
+
+function init() {
+  map = new ymaps.Map('map', {
+    center: center,
+    zoom: 17
+  });
+
+  map.options.set('yandexMapDisablePoiInteractivity', true);
+
+  generateObjects('buffet');
 
   map.controls.remove('geolocationControl');
   map.controls.remove('searchControl');
@@ -436,3 +453,14 @@ function init() {
 }
 
 ymaps.ready(init);
+
+const legendType = document.querySelectorAll('.legend-type');
+document.querySelector('select').addEventListener('change', function (e) {
+  map.geoObjects.removeAll();
+
+  const select = e.target;
+
+  generateObjects(select.value);
+
+  legendType.forEach(elem => elem.textContent = select.options[select.selectedIndex].innerText.toLowerCase());
+});
