@@ -14,7 +14,7 @@ const coffee = [
       items: [
         'сетевая кофейня с различными видами кофе "Monkey Grinder" (1 этаж) <span>8:00 - 20:00</span>',
       ],
-      photos: ['./img/photo/2-1.jpg', './img/photo/2-2.jpg']
+      photos: ['./img/photo/2.coffee.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -45,7 +45,7 @@ const coffee = [
       items: [
         'кофейня <span>10:00 - 18:00</span>',
       ],
-      photos: ['./img/photo/5.jpg', './img/photo/5.2.jpg']
+      photos: ['./img/photo/5.coffee.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -108,7 +108,7 @@ const coffee = [
       items: [
         'сетевая кофейня с различными видами кофе "Monkey Grinder" (2 этаж) <span>9:00 - 17:00</span>',
       ],
-      photos: ['./img/photo/12-2.jpg', './img/photo/12-2.2.jpg']
+      photos: ['./img/photo/12.coffee.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -121,6 +121,21 @@ const coffee = [
     mark: {
       iconLayout: 'default#image',
       iconImageHref: 'img/buildings/19.png',
+      iconImageSize: [27, 27],
+    }
+  },
+  {
+    coords: [58.0077941819607, 56.190191254275256],
+    balloonContent: {
+      title: 'Кофейня "Old School"',
+      items: [
+        'Кофейня "Old School" <span>9:00 - 19:00</span>',
+      ],
+      photos: ['./img/photo/old.jpg']
+    },
+    mark: {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/buildings/old-school.png',
       iconImageSize: [27, 27],
     }
   },

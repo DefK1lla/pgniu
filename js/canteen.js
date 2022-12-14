@@ -7,7 +7,7 @@ const canteen = [
         'столовая «Университетская» (1 этаж) <span>9:00 - 16:00</span>',
         'столовая «Профессорская» (1 этаж) <span>11:00 - 16:00</span>',
       ],
-      photos: ['./img/photo/1-1.jpg', './img/photo/1-1.2.jpg', './img/photo/1-1.3.jpg', './img/photo/1-2.jpg']
+      photos: ['./img/photo/1.stolovka.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -54,7 +54,7 @@ const canteen = [
       items: [
         'столовая (1 этаж) <span>10:30 - 16:00</span>',
       ],
-      photos: ['./img/photo/6-1.jpg', './img/photo/6-1.1.jpg']
+      photos: ['./img/photo/6.stolovka.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -77,7 +77,7 @@ const canteen = [
       items: [
         'столовая (1 этаж) <span>9:00 - 17:00</span>',
       ],
-      photos: ['./img/photo/8-1.jpg', './img/photo/8-2.jpg']
+      photos: ['./img/photo/8.stolovka.jpg']
     },
     mark: {
       iconLayout: 'default#image',

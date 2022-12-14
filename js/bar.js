@@ -6,7 +6,7 @@ const bar = [
       items: [
         'бар в столовой «Университетской» <span>10:00 - 18:00</span>',
       ],
-      photos: ['./img/photo/1-1.jpg', './img/photo/1-1.2.jpg', './img/photo/1-1.3.jpg', './img/photo/1-2.jpg']
+      photos: ['./img/photo/1.bar.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -101,7 +101,7 @@ const bar = [
       items: [
         'бар-буфет (2 этаж) <span>8:00 - 20:00</span>',
       ],
-      photos: ['./img/photo/12-2.jpg', './img/photo/12-2.2.jpg']
+      photos: ['./img/photo/12.bar-byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -114,21 +114,6 @@ const bar = [
     mark: {
       iconLayout: 'default#image',
       iconImageHref: 'img/buildings/19.png',
-      iconImageSize: [27, 27],
-    }
-  },
-
-  {
-    coords: [58.0077941819607, 56.190191254275256],
-    balloonContent: {
-      title: 'Бар "Old School"',
-      items: [
-        'бар "Old School" <span>9:00 - 19:00</span>',
-      ]
-    },
-    mark: {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/buildings/old-bar.png',
       iconImageSize: [27, 27],
     }
   },

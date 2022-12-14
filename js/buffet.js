@@ -4,11 +4,10 @@ const buffet = [
     balloonContent: {
       title: 'Корпус №1',
       items: [
-        'бар в столовой «Университетской» <span>10:00 - 18:00</span>',
         'буфет (1 этаж, рядом с переходом в корпус 8) <span>9:00 - 17:30</span>',
         'буфет (2 этаж, переход между корпусами 1 и 2). комплексные обеды,ужины. <span>9:00 - 17:00</span>'
       ],
-      photos: ['./img/photo/1-1.jpg', './img/photo/1-1.2.jpg', './img/photo/1-1.3.jpg', './img/photo/1-2.jpg']
+      photos: ['./img/photo/1.byfet.jpg', './img/photo/1.byfet2.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -24,7 +23,7 @@ const buffet = [
         'буфет (2 этаж) <span>9:00 - 17:00</span>',
         'буфет (3 этаж) <span>11:00 - 16:00</span>',
       ],
-      photos: ['./img/photo/2-1.jpg', './img/photo/2-2.jpg']
+      photos: ['./img/photo/2.byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -39,7 +38,7 @@ const buffet = [
       items: [
         'буфет “РИНО” (3 этаж) <span>10:00 - 18:00</span>',
       ],
-      photos: ['./img/photo/3.jpg']
+      photos: ['./img/photo/3.byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -63,7 +62,7 @@ const buffet = [
         'Универ-буфет (1 этаж, левое крыло) <span>9:00 - 17:00</span>',
         'Кис-Рис (1 этаж, правое крыло). азиатская кухня <span> 8:00 - 20:00</span>',
       ],
-      photos: ['./img/photo/5.jpg', './img/photo/5.2.jpg']
+      photos: ['./img/photo/5.byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -78,7 +77,7 @@ const buffet = [
       items: [
         'буфет (1 этаж, правое крыло) <span>8:30 - 19:00</span>',
       ],
-      photos: ['./img/photo/6-1.jpg', './img/photo/6-1.1.jpg']
+      photos: ['./img/photo/6.byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -93,7 +92,7 @@ const buffet = [
       items: [
         'буфет “Киты-Еды” <span>9:00 - 18:00</span>',
       ],
-      photos: ['./img/photo/7.jpg']
+      photos: ['./img/photo/7.byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -108,7 +107,7 @@ const buffet = [
       items: [
         'буфет (2 этаж, переход из корпуса 8 в 6 и 7) <span>8:30 - 17:30</span>',
       ],
-      photos: ['./img/photo/8-1.jpg', './img/photo/8-2.jpg']
+      photos: ['./img/photo/8.byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -123,7 +122,7 @@ const buffet = [
       items: [
         'буфет (2 этаж) <span>8:30 - 20:00</span>',
       ],
-      photos: ['./img/photo/9-2.jpg',]
+      photos: ['./img/photo/9.byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',
@@ -154,7 +153,7 @@ const buffet = [
       items: [
         'бар-буфет (2 этаж) <span>8:00 - 20:00</span>',
       ],
-      photos: ['./img/photo/12-2.jpg', './img/photo/12-2.2.jpg']
+      photos: ['./img/photo/12.bar-byfet.jpg']
     },
     mark: {
       iconLayout: 'default#image',

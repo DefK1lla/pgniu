@@ -354,7 +354,7 @@ const marks = [
   },
 ];
 
-document.querySelector('.popup__close').addEventListener('click', function (e) {
+document.querySelector('.popup__close').addEventListener('click', (e) => {
   e.target.parentElement.classList.remove('active')
 });
 
@@ -409,9 +409,7 @@ function generateObjects(type) {
     map.geoObjects.add(mark);
 
     if (bldng.balloonContent) {
-      mark.events.add('click', function (e) {
-        setPopupContent(bldng);
-      });
+      mark.events.add('click', e => setPopupContent(bldng));
     }
 
   });
@@ -422,7 +420,7 @@ function generateObjects(type) {
   marks.forEach(mrk => mapMarks.add(new ymaps.Placemark(mrk.coords, {}, mrk.mark)));
   map.geoObjects.add(mapMarks);
 
-  map.events.add('boundschange', function (e) {
+  map.events.add('boundschange', (e) => {
     if (e.get('newZoom') < 17) {
       mapMarks.options.set('visible', false);
     } else {
@@ -455,7 +453,7 @@ function init() {
 ymaps.ready(init);
 
 const legendType = document.querySelectorAll('.legend-type');
-document.querySelector('select').addEventListener('change', function (e) {
+document.querySelector('.select').addEventListener('change', (e) => {
   map.geoObjects.removeAll();
 
   const select = e.target;
