@@ -219,6 +219,7 @@ body {
 .legend__item {
   position: relative;
 
+  max-width: 200px;
   padding-left: 20px;
 }
 
@@ -278,17 +279,13 @@ body {
   position: relative;
 
   margin: 3px 0;
-  padding-left: 10px;
 
   text-align: center;
 }
 
 .balloon__item::before {
   content: "-";
-
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-right: 10px;
 }
 
 .balloon__item span {
