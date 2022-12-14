@@ -440,7 +440,7 @@ function init() {
 
   map.options.set('yandexMapDisablePoiInteractivity', true);
 
-  generateObjects('buffet');
+  generateObjects('all');
 
   map.controls.remove('geolocationControl');
   map.controls.remove('searchControl');
