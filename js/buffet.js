@@ -23,7 +23,7 @@ const buffet = [
         'буфет (2 этаж) <span>9:00 - 17:00</span>',
         'буфет (3 этаж) <span>11:00 - 16:00</span>',
       ],
-      photos: ['./img/photo/2.byfet.jpg']
+      photos: ['./img/photo/2.byfet.jpg', './img/photo/2.byfet2.jpg']
     },
     mark: {
       iconLayout: 'default#image',

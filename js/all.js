@@ -27,7 +27,7 @@ const all = [
         'буфет (3 этаж) <span>11:00 - 16:00</span>',
         'сетевая кофейня с различными видами кофе "Monkey Grinder" (1 этаж) <span>8:00 - 20:00</span>',
       ],
-      photos: ['./img/photo/2.byfet.jpg', './img/photo/2.coffee.jpg']
+      photos: ['./img/photo/2.byfet.jpg', './img/photo/2.byfet2.jpg', './img/photo/2.coffee.jpg']
     },
     mark: {
       iconLayout: 'default#image',
